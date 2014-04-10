@@ -1,4 +1,4 @@
-# CORE  HTML/CSS
+# GDI Core Intro to HTML/CSS
 
 This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
@@ -15,6 +15,7 @@ Finally, you will go through many of the basic HTML elements.
 Students will begin to make a personal portfolio page with HTML elements and no styling.
 
 ### Class 2
+
 Introduction to CSS. Colors? Styles? What? It's all true. And you thought we are going to make you live your life in black and white.
 
 You will go through most of the css styles, including font changes, layout, size, and color. You will show how to connect them to html selectors. The CSS file will be an external file.
