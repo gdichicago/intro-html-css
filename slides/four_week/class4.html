@@ -14,14 +14,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="stylesheet" href="../reveal/css/reveal.css">
-    <link rel="stylesheet" href="../reveal/css/theme/gdilight.css" id="theme">
+    <link rel="stylesheet" href="../../reveal/css/reveal.css">
+    <link rel="stylesheet" href="../../reveal/css/theme/gdilight.css" id="theme">
 
     <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="../reveal/lib/css/light.css">
+    <link rel="stylesheet" href="../../reveal/lib/css/light.css">
 
     <!-- If use the PDF print sheet so students can print slides-->
-    <link rel="stylesheet" href="../reveal/css/print/pdf.css" type="text/css" media="print">
+    <link rel="stylesheet" href="../../reveal/css/print/pdf.css" type="text/css" media="print">
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
@@ -32,28 +32,28 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <img src = "../images/gdi_logo_badge.png">
+          <img src = "../../images/gdi_logo_badge.png">
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 4</h4>
         </section>
         <section>
          <h3>Static Positioning</h3>
          <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
-<pre><code class="html">&lt;img src="../images/cookie1.png"/>
-&lt;img src="../images/cookie2.png"/>
-&lt;img src="../images/cookie3.png"/>
+<pre><code class="html">&lt;img src="../../images/cookie1.png"/>
+&lt;img src="../../images/cookie2.png"/>
+&lt;img src="../../images/cookie3.png"/>
 ...
-&lt;img src="../images/cookie2.png"/>
-&lt;img src="../images/cookie3.png"/>
+&lt;img src="../../images/cookie2.png"/>
+&lt;img src="../../images/cookie3.png"/>
 </code></pre>
-<img src="../images/cookie1.png"/>
-<img src="../images/cookie2.png"/>
-<img src="../images/cookie3.png"/>
-<img src="../images/cookie1.png"/>
-<img src="../images/cookie2.png"/>
-<img src="../images/cookie3.png"/>
-<img src="../images/cookie2.png"/>
-<img src="../images/cookie3.png"/>
+<img src="../../images/cookie1.png"/>
+<img src="../../images/cookie2.png"/>
+<img src="../../images/cookie3.png"/>
+<img src="../../images/cookie1.png"/>
+<img src="../../images/cookie2.png"/>
+<img src="../../images/cookie3.png"/>
+<img src="../../images/cookie2.png"/>
+<img src="../../images/cookie3.png"/>
        </section>
 
        <section>
@@ -153,7 +153,7 @@
         <p>The containing div has a position of relative, and the caption has a position of absolute.</p>
         </div>
         <div class="right" style="width: 45%;">
-          <img src="../images/example-absolute.png" style="border: none; box-shadow: none;"/>
+          <img src="../../images/example-absolute.png" style="border: none; box-shadow: none;"/>
         </div>
        </section>
        <section>
@@ -204,7 +204,7 @@
        <section>
        <h3>Float: Example</h3>
        <p>Below a &lt;blockquote> is floated to the left, allowing text to wrap around it on the right</p>
-       <img src="../images/example-floatbq.png" alt="example float" />
+       <img src="../../images/example-floatbq.png" alt="example float" />
        </section>
        <section>
          <h3>Float</h3>
@@ -226,7 +226,7 @@
        <section>
        <h3>Using floats to place elements side by side</h3>
        <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
-       <img src="../images/example-float-column.png" />
+       <img src="../../images/example-float-column.png" />
        </section>
        <!-- Clear-->
        <section>
@@ -282,8 +282,8 @@ clear: both;
         </div>
       </footer>
     </div>
-    <script src="../reveal/lib/js/head.min.js"></script>
-    <script src="../reveal/js/reveal.min.js"></script>
+    <script src="../../reveal/lib/js/head.min.js"></script>
+    <script src="../../reveal/js/reveal.min.js"></script>
 
     <script>
 
@@ -299,12 +299,12 @@ clear: both;
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '../reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: '../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
 
