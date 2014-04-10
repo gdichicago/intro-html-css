@@ -1,6 +1,6 @@
 [submodule "website-assets"]
 	path = website-assets
 	url = git://github.com/gdichicago/website-assets.git
-[submodule "reveal.js"]
-	path = reveal.js
+[submodule "reveal"]
+	path = reveal
 	url = git://github.com/girldevelopit/reveal.js.git
