@@ -23,6 +23,10 @@
   <!-- If use the PDF print sheet so students can print slides-->
   <link rel="stylesheet" href="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/css/print/pdf.css" type="text/css" media="print">
 
+   <!-- Meagan's style tweaks - serif fonts for the readability win-->
+  <link rel="stylesheet" href="tweaks.css" type="text/css">
+
+
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -42,7 +46,7 @@
           <p><small>Ask a TA if you need help setting this up.</small></p>
         </section>
         <section>
-          <img src = "../../images/gdi_logo_badge.png">
+          <img class="no-border" style="width:420px; margin-bottom:45px;" src = "../../images/gdi_logo_badge.png">
           <h3>Beginning HTML and CSS</h3>
           <h4>Part 1</h4>
         </section>
@@ -67,9 +71,9 @@
 
         <section class="hide-pdf">
           <h3>About your instructor</h3>
-          <h4>Katy Exline</h4>
-          <img src="http://www.peerfit.com/blog/wp-content/uploads/2013/12/running.gif" alt="hello!">
-          <h4>Co-Leader GDI Chicago, Awesome Lady, Engineer at Fooda, Dev Bootcamp grad</h4>
+          <h4>Meagan Evanoff</h4>
+         <a href="http://nimga.com/v/F54qQ" target="_blank"><img src="http://nimga.com/m/F54qQ.gif" alt="Oh, this is BRILLIANT!" border="0" /></a>
+          <h4>Senior Front-End Developer at <br>Organizing for Action,<br>self-identified nerd</h4>
         </section>
         <section class="hide-pdf">
           <h3>Welcome!</h3>
@@ -78,7 +82,7 @@
             <ul>
               <li>Who are you?</li>
               <li>What do you hope to get out of the class?</li>
-              <li>What's your favorite thing about Chicago?</li>
+              <li>What super power would you have if you got to pick one?</li>
             </ul>
           </div>
         </section>
@@ -192,6 +196,25 @@
             <img src="../../images/folderstructure1.png" />
           </div>
         </section>
+
+        <!-- Opening and Editing files -->
+        <section>
+          <h3>Get Started: Opening and editing files</h3>
+          <div class="smaller" style="text-align:left">
+            <p>HTML files are <strong>read</strong> by browsers. This is the default; i.e., what happenes when you double-click.</p>
+            
+            <p>HTML files are <strong>edited</strong> by those text editors we mentioned: Sublime, Text Wranger, etc.</p>
+            
+            <p>You can have an HTML file open in both an editor and a browser! In fact, it's recommended.</p>
+            <ul>
+              <li>Use Ctrl+S (Win) or Cmd+S (Mac) to save a file in your editor.</li>
+              <li>Use Ctrl+R (Win) or Cmd+R (Mac) to refresh a file in your browser.</li>
+            </ul>
+          </div>
+
+        </section>
+
+
         <!-- Example of site we'll be making-->
         <section>
           <h3>What we'll be building today</h3>
@@ -324,7 +347,8 @@
                     <section>
                       <h3>Head and Body Tags</h3>
                       <div class="left-align">
-                        <p class="fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description. </p>
+                        <p class="fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page.
+                        <p class="fragment">Meta information is not visible to the user, but has many purposes, one of which is to tell search engines about your page, who created it, and a description. </p>
                         <p class="fragment"><span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
                       </div>
                     </section>
@@ -356,11 +380,12 @@
                     <!-- Nesting-->
                     <section>
                       <h3>Nesting</h3>
-                      <p>All elements "nest" inside one another</p>
-                      <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-                      <img src = "../../images/owls.jpg"/>
+                      <img class="pull-right" src = "../../images/owls.jpg"/>
+                      <p class="align-left">All elements "nest" inside one another</p>
+                      <p class="align-left">Nesting is what happens when you put other containing tags inside other containing tags.</p> <p class="align-left">For example, you would put the &lt;p&gt; inside of the &lt;body&gt; tags. The &lt;p&gt; is now nested inside the &lt;body&gt;</p>
+                      
 
-                      <p>Whichever element OPENS first CLOSES last</p>
+                      <p class="align-left"><em>Whichever element OPENS first CLOSES last.</em></p>
                     </section>
 
                     <!--example of nesting -->
@@ -372,6 +397,8 @@
     A paragraph inside the body tag
   &lt;/p&gt;
 &lt;/body&gt;
+<div class="nest-outline one fragment"></div>
+<div class="nest-outline two fragment"></div>
                       </code></pre>
                       <p>Paragraphs 'nested' inside list items.</p>
                       <pre><code>&lt;ul&gt;
@@ -381,6 +408,9 @@
     &lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+<div class="nest-outline three fragment"></div>
+<div class="nest-outline four fragment"></div>
+<div class="nest-outline five fragment"></div>
                       </code></pre>
                     </section>
                     <!-- Elements -->
@@ -555,21 +585,23 @@
                   <section>
                     <h3>Element: Line Break</h3>
                     <div>
-                      <div class="left" style="width:50%">
-                        <pre><code>&lt;p>
-Imagine there's no Heaven &lt;br/>
-It's easy if you try &lt;br/>
-&lt;br/>
-Above us only sky
+                      <div>
+                        <pre style="margin-left:0"><code>&lt;p>
+I got the eye of the tiger,&lt;br/>
+a fighter,  &lt;br/>
+dancing through the fire &lt;br/>
+'cause I am a champion &lt;br/>
+and you’re gonna hear me roar
 &lt;/p>
                         </code></pre>
                       </div>
-                      <div class="left left-align" style="width:50%; font-size: 80%;">
+                      <div class="left-align" style="font-size: 80%;">
                         <p>
-                          Imagine there's no Heaven <br/>
-                          It's easy if you try <br/>
-                          No hell below us  <br/>
-                          Above us only sky
+                          I got the eye of the tiger, <br/>
+                          a fighter, <br/>
+                          dancing through the fire <br/>
+                          'cause I am a champion<br>
+                          and you’re gonna hear me roar
                         </p>
                       </div>
                       <div class="clear"></div>
