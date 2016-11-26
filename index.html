@@ -1,196 +1,113 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Girl Develop It Chicago</title>
+<!doctype html>
+<html lang="en">
+
   <head>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
-    <link href="https://s3.amazonaws.com/gdichicago-cdn/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <link href="https://s3.amazonaws.com/gdichicago-cdn/stylesheets/main.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <header>
-    <div class="pure-g">
-      <div class="pure-u-1-5"></div>
-      <div class="pure-u-3-5">
+    <meta charset="utf-8">
 
+    <title>HTML/CSS ~ Girl Develop It</title>
 
+    <meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. The course is meant to be taught in 4 two-hour sections.">
+    <meta name="author" content="Girl Develop It">
 
-        <!-- HEADER -->
-        <h1>Girl Develop It Chicago</h1>
-        <h2>Introduction to HTML/CSS</h2>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
 
-        <!-- MENU -->
-        <nav>
-          <h3>
-            <a href="#materials">Class materials</a>
-            <a href="#resources">Resources</a>
-            <a href="#code">Code samples</a>
-            <a href="http://www.meetup.com/Girl-Develop-It-Chicago-IL/">Meetup.com</a>
-          </h3>
-        </nav>
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder">
+          <h1>Intro to HTML/CSS</h1>
+          <h2>Class Slides</h2>
+        </section>
+
+        <section>
+          <h3>Materials</h3>
+          <ul>
+            <li><a href="class1.html">Class 1 Slides</a></li>
+            <li><a href="files/reference-sheet-1.pdf">Class 1 Reference</a></li>
+            <li><a href="class2.html">Class 2 Slides</a></li>
+            <li><a href="files/reference-sheet-2.pdf">Class 2 Reference</a></li>
+            <li><a href="class3.html">Class 3 Slides</a></li>
+            <li><a href="files/reference-sheet-3.pdf">Class 3 Reference</a></li>
+            <li><a href="class4.html">Class 4 Slides</a></li>
+            <li><a href="files/reference-sheet-4.pdf">Class 4 Reference</a></li>
+            <li><a href="homework.html">Homework</a></li>
+            <li><a href="files/sample-code.zip">Sample files</a></li>
+          </ul>
+        </section>
       </div>
-      <div class="pure-u-1-5"></div>
+
     </div>
-  </header>
-
-
-
-  <!-- CONTENT -->
-  <div class="pure-g">
-    <div class="pure-u-1-5"></div>
-    <div class="pure-u-3-5">
-      <section>
-
-
-
-
-        <!-- CLASS MATERIALS -->
-        <article>
-          <a name="materials"></a><h1>Class materials</h1>
-          <h2>Slides<!--: Single Day or Two Part Workshop--></h2>
-          <ul>
-            <li><a href="slides/intensive/session1.html">Session 1: Intro to HTML and CSS</a></li>
-            <li><a href="slides/intensive/session2.html">Session 2: Divs, The Box Model, Floats, Positioning</a></li>
-          </ul>
-        </article>
-
-
-
-
-        <!-- RESOURCES -->
-        <article>
-          <a name="resources"></a><h1>Resources</h1>
-          <h2>HTML</h2>
-          <ul>
-            <li><a href="http://htmlandcssbook.com/extras/html-escape-codes/">HTML Character Codes</a></li>
-          </ul>
-          <ul>
-            <li><a href="http://www.w3schools.com/html/default.asp">HTML Reference</a></li>
-          </ul>
-
-          <h2>CSS</h2>
-          <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Properties</a></li>
-          </ul>
-          <ul>
-            <li><a href="http://www.webdesigndev.com/web-development/16-gorgeous-web-safe-fonts-to-use-with-css">Web-safe Fonts</a></li>
-          </ul>
-
-          <h2>Tutorials</h2>
-          <ul>
-            <li><a href="http://www.codecademy.com/tracks/web">Codeacademy HTML/CSS</a></li>
-          </ul>
-          <ul>
-            <li><a href="https://www.codeschool.com/paths/html-css">Code School CSS</a></li>
-          </ul>          <ul>
-            <li><a href="http://teamtreehouse.com/">Treehouse</a></li>
-          </ul>          <ul>
-            <li><a href="http://css.maxdesign.com.au/floatutorial/">Float Tutorial</a>: walks through how to use the css float property</li>
-          </ul>       
-
-          <h2>Tools</h2>
-          <ul>
-            <li><a href="http://mashable.com/2013/07/11/lorem-ipsum/">Lorem Ipsum (text) generators</a></li>
-          </ul>
-          <ul>
-            <li><a href="http://www.colorpicker.com/">Basic Color Picker</a></li>
-          </ul>          
-          <ul>
-            <li><a href="http://colorschemedesigner.com/">Color Scheme Designer</a></li>
-          </ul>
-
-          <h2>Other Awesome Things</h2>
-          <ul>
-            <li><a href="http://tympanus.net/codrops/">Codrops</a>: cool site with intermediate/advanced CSS tricks and demos</li>
-          </ul>
-          <ul>
-            <li><a href="http://skillcrush.com/blog/">Skillcrush Blog</a>: an awesome women-oriented tech site</li>
-          </ul>
-          <ul>
-            <li><a href="http://css-tricks.com/">CSS Tricks</a>: great site with good articles to explain all things CSS including the basics</li>
-          </ul>          
-          <ul>
-            <li><a href="http://hackdesign.org/lessons">Hack Design</a>: a set of free 'lessons' if you want to learn more about design</li>
-          </ul>
-          <ul>
-            <li><a href="http://www.minimalsites.com/">Minimal Sites</a>: a source of inspiration for websites to copy</li>
-          </ul>
-        </article>
-
-        <!-- CODE SAMPLES -->
-        <!-- EMBEDDED GISTS -->
-        <article>
-          <a name="code"></a><h1>Code samples</h1>
-            <h2>Head and Body Tags</h2>
-            <p>
-              This is the basic HTML skeleton that makes up a website!
-            </p>
-            <script src="https://gist.github.com/kexline4710/9700910.js"></script>
-
-            <h2>HTML Elements</h2>
-            <p>
-              The most common HTML elements include paragraphs, lists, links, images and the other selectors below.
-            </p>
-            <script src="https://gist.github.com/kexline4710/9701487.js"></script>
-
-            <h2>HTML CSS Selectors and Properties</h2>
-            <p>
-              These are a couple different types of CSS properties and how you can target HTML elements with ids and classes.
-            </p>
-            <script src="https://gist.github.com/kexline4710/9701572.js"></script>
-
-            <h2>HTML CSS Selectors and Properties</h2>
-            <p>
-              If you want to connect your CSS file to your HTML file, make sure this is placed within the head tags in your HTML file. You may have to change the path (src='style.css') to reflect where your CSS file is located.
-            </p>
-            <script src="https://gist.github.com/kexline4710/9701578.js"></script>
-        </article>
-
-
-
-
-        <!-- DISQUS COMMENTS SECTION -->
-        <article>
-          <h1>Discussion</h1>
-          <p>
-            Stuck? Need help? Have another resource? Leave a note here!
-          </p>
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-              var disqus_shortname = 'gdichicago'; // required: replace example with your forum shortname
-
-              /* * * DON'T EDIT BELOW THIS LINE * * */
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </article>
-      </section>
-
-
-
-
-        <!-- FOOTER -->
       <footer>
-        <p>
-          <a href="http://girldevelopit.com"><img src="https://s3.amazonaws.com/gdichicago-cdn/images/logo.png" width="300px"></a>
-        </p>
-        <p>
-          Created and maintained by <a href="http://twitter.com/feministy">Liz Abinante</a> and <a href="https://github.com/kexline4710/">Katy Exline</a> of <a href="http://gdichicago.com">Girl Develop It Chicago</a>.
-        </p>
+        <div class="copyright">
+          Intro to HTML/CSS - GDIRDU
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
       </footer>
     </div>
-    <div class="pure-u-1-5"></div>
-  </div>
 
-  <script type="text/javascript" src="//use.typekit.net/inx7vdr.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</body>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
